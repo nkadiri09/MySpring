@@ -13,4 +13,6 @@ public class DrawingApp {
 		
 		//Triangle nnnnnnnnn
 	}
+	
+	// for Stage files edit
 }
