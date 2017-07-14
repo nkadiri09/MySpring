@@ -10,9 +10,5 @@ public class DrawingApp {
 		BeanFactory factory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
 		Triangle triangle = (Triangle) factory.getBean("triangle");
 		triangle.draw();
-		
-		//Triangle nnnnnnnnn
 	}
-	
-	// for Stage files edit
 }
