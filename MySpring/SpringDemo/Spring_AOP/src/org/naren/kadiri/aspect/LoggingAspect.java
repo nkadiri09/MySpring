@@ -7,7 +7,7 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class LoggingAspect {
 
-	@Before("allGetters()")
+	@Before("allGetters() && allGetters1() ")
 	public void loggingAdvice() {
 		System.out.println("Advice get method called");
 	}
@@ -19,6 +19,10 @@ public class LoggingAspect {
 
 	@Pointcut("execution(* get*())")
 	public void allGetters() {
+	}
+
+	@Pointcut("within(org.naren.kadiri.model.Circle)")
+	public void allGetters1() {
 	}
 
 }
