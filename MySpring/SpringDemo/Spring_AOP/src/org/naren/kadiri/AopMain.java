@@ -9,6 +9,7 @@ public class AopMain {
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		ShapeService shapeService = context.getBean("ShapeService", ShapeService.class);
+		shapeService.getCircle().setName("Dummy Name");
 		System.out.println(shapeService.getCircle().getName());
 	}
 

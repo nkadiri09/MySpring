@@ -8,6 +8,7 @@ public class Circle {
 	}
 
 	public void setName(String name) {
+		// System.out.println("Circle setter called");
 		Name = name;
 	}
 }
