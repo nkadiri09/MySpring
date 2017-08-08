@@ -8,7 +8,14 @@ public class Circle {
 	}
 
 	public void setName(String name) {
-		// System.out.println("Circle setter called");
+		System.out.println("Circle setter called");
 		Name = name;
+		throw(new RuntimeException());
+	}
+	
+	public String setNameArguments(String name) {
+		System.out.println("Circle setter called");
+		Name = name;
+		return "Naren Custom Message";
 	}
 }
