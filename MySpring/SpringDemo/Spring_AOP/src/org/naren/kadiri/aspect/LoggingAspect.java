@@ -28,8 +28,22 @@ public class LoggingAspect {
 		System.out.println("An exception has been called " + ex);
 	}
 
-	@Around("allGetters()")
+/*	@Around("allGetters()")
 	public void myAroundAdvice(ProceedingJoinPoint proceedingJoinPoint) {
+
+		try {
+			System.out.println("Before Advice");
+			proceedingJoinPoint.proceed();
+			System.out.println("After Advice");
+		} catch (Throwable e) {
+			System.out.println(" After Throwing");
+		}
+		System.out.println("After Finally");
+
+	}*/
+	
+	@Around("@annotation(org.naren.kadiri.aspect.Loggable)")
+	public void myAroundAdvice1(ProceedingJoinPoint proceedingJoinPoint) {
 
 		try {
 			System.out.println("Before Advice");
