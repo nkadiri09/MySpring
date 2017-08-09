@@ -13,7 +13,7 @@
 	</bean>
 
 	<bean id="circle" class="org.naren.kadiri.model.Circle">
-		<!-- <property name="name" value="Circle object" />  -->
+		<property name="name" value="Circle object" />
 	</bean>
 
 	<bean id="ShapeService" class="org.naren.kadiri.service.ShapeService"
