@@ -2,6 +2,8 @@
 
 It's a simple Spring notes
 
+# @EnableRetry notes- https://howtodoinjava.com/spring-boot2/spring-retry-module/
+
 ## 1. Why we need to retry?
 
 In most our projects we usually have some scenario to retry few operation if it falls first time. For example let’s say the during invoking any backend external service, that service might be down for few reasons like network outage, server down, network glitch, deadlock etc. In this case usually we try to retry the operation for few times before we send any specific error to the client programs to make processing more robust and less prone to failure.
